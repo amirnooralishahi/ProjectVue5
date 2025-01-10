@@ -1,0 +1,182 @@
+*,
+*::after,
+*::before {
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+
+  &-contain {
+    .search {
+      width: 600px;
+    }
+  }
+}
+
+.category {
+  &-head {
+    font-size: 1.1rem;
+    gap: 3.5rem;
+  }
+}
+
+.Card {
+  margin-top: 35px;
+
+  .filter {
+    width: 280px;
+    height: 470px !important;
+
+    &-contain {
+
+      gap: 1rem;
+
+      .title {
+        .delete {
+          font-size: 12px;
+          letter-spacing: 0.005rem;
+        }
+      }
+
+      .line {
+        width: 85%;
+        height: 1px;
+
+        background: rgb(209, 209, 209);
+      }
+    }
+  }
+
+  &-contain {
+
+
+
+    .filter-item {
+
+      gap: 4rem;
+      font-size: 16px !important;
+    }
+
+
+    .cardItems {
+
+      gap: 30px;
+
+      .cardItem {
+        width: 300px !important;
+
+
+        .image {}
+      }
+    }
+
+
+  }
+}
+
+.navigation {
+
+  .next,
+  .per {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid darkred;
+
+  }
+
+  margin-left: 40px;
+
+  &-contain {
+
+    width: 680px;
+
+    .circle {
+
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+.footer_up {
+  background-color: darkred;
+
+
+  &-contain {
+    .right {
+      .text {
+        font-size: 13px;
+      }
+
+      .button {
+        background-color: #ae2432;
+        height: 40px;
+        width: 80px;
+      }
+
+
+
+      .email {
+
+        width: 350px;
+        background-color: darkred;
+      }
+    }
+
+    .left {
+      margin-right: 250px;
+
+      .icon {
+        color: white;
+      }
+    }
+  }
+}
+
+.footer_down {
+  // height: 300px;
+  background-color: #ae2432;
+
+  &-contain {
+    .line {
+      height: 1px;
+      width: 120px;
+      background-color: white;
+    }
+
+    .text {
+      color: rgb(208, 206, 206);
+    }
+
+    .with,
+    .several,
+    .guid {
+      color: white;
+
+
+    }
+
+    .shop {
+      &-contain {
+        border: 1px solid red !important;
+        gap: 60px;
+
+        .info {
+          color: rgb(201, 201, 201) !important;
+          font-size: 12px;
+        }
+
+        .image {}
+      }
+
+
+    }
+  }
+
+}
