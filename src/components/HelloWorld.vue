@@ -42,11 +42,11 @@
           <div class="search-icon p-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="currentColor"
+              width="22"
+              height="22"
+              fill="#A72F3B"
               class="bi bi-search text-danger"
-              viewBox="0 0 16 16"
+              viewBox="0 0 14 14"
             >
               <path
                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
@@ -54,7 +54,7 @@
             </svg>
           </div>
           <input type="text " placeholder="" class="border-0 w-100 text-end" />
-          <span class="placeholder bg-white text-danger pe-3"> استیکر </span>
+          <span class="placeholder bg-white stick pe-3"> استیکر </span>
         </div>
       </div>
       <div class="right">
@@ -63,23 +63,26 @@
     </div>
   </div>
   <div class="category w-100 mt-5 d-flex flex-column align-items-center">
-    <div class="category-head d-flex">
-      <p>پوشاک</p>
-      <p>لوازم خانه</p>
-      <p>قاب موبایل</p>
-      <p>اکسسوری</p>
-      <p>مدرسه و اداره</p>
-      <p>کارت و پوستر</p>
+    <div class="category-head d-flex w-75">
       <p>جشن و مهمانی</p>
+      <p>کارت و پوستر</p>
+      <p>مدرسه و اداره</p>
+
+      <p>اکسسوری</p>
+      <p>قاب موبایل</p>
+
+      <p>لوازم خانه</p>
+
+      <p>پوشاک</p>
     </div>
   </div>
-  <div class="Card d-flex p-5 justify-content-center row">
+  <div class="Card d-flex justify-content-center row">
     <div class="Card-contain d-flex flex-column col-9">
       <cardItem />
     </div>
-    <div class="filter border rounded-3 ms-3 col-3">
+    <div class="filter border rounded-3 ms-3 col-3 mt-5">
       <div
-        class="filter-contain d-flex flex-column align-items-center gap-3 p-3"
+        class="filter-contain d-flex flex-column align-items-center gap-4 p-3"
       >
         <div class="title d-flex justify-content-between w-100 p-2">
           <span class="delete text-danger fw-bold">حذف فیلتر ها </span>
@@ -87,11 +90,11 @@
         </div>
         <div class="design d-flex flex-column align-items-center w-100">
           <div class="up d-flex w-100 justify-content-center">
-            <div class="icon">
+            <div class="icon w-25 border d-flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
+                width="12"
+                height="12"
                 fill="currentColor"
                 class="bi bi-caret-down-fill"
                 viewBox="0 0 16 16"
@@ -101,13 +104,13 @@
                 />
               </svg>
             </div>
-            <span class="text-end w-75 text-secondary">نوع طرح</span>
+            <span class="w-75 text-end w-75 text-secondary">نوع طرح</span>
           </div>
           <div class="line"></div>
         </div>
         <div class="distance d-flex flex-column align-items-center w-100">
           <div class="up d-flex w-100 justify-content-center">
-            <div class="icon">
+            <div class="icon w-25">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
@@ -127,7 +130,7 @@
         </div>
         <div class="color d-flex flex-column align-items-center w-100">
           <div class="up d-flex w-100 justify-content-center">
-            <div class="icon">
+            <div class="icon w-25">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
@@ -147,7 +150,7 @@
         </div>
         <div class="delivary d-flex flex-column align-items-center w-100">
           <div class="up w-100">
-            <div class="icon d-flex w-100 justify-content-between px-4">
+            <div class="icon-check d-flex w-100 justify-content-between">
               <div
                 class="form-check w-100 form-switch d-flex justify-content-between"
               >
@@ -169,7 +172,7 @@
         </div>
         <div class="available d-flex flex-column align-items-center w-100">
           <div class="up d-flex w-100 justify-content-center">
-            <div class="icon d-flex w-100 px-4">
+            <div class="icon-check d-flex w-100">
               <div
                 class="form-check form-switch w-100 d-flex justify-content-between"
               >
@@ -192,7 +195,7 @@
 
         <div class="graphic d-flex flex-column align-items-center w-100">
           <div class="up d-flex w-100 justify-content-center">
-            <div class="icon d-flex w-100 px-4">
+            <div class="icon-check d-flex w-100">
               <div
                 class="form-check form-switch w-100 d-flex justify-content-between"
               >
@@ -214,7 +217,7 @@
         </div>
         <div class="price d-flex flex-column align-items-center w-100">
           <div class="up d-flex w-100 justify-content-center">
-            <div class="icon d-flex justify-content-center border">
+            <div class="icon w-25">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
@@ -333,7 +336,7 @@
     </div>
   </div>
   <div class="footer_up p-5 w-100 d-flex justify-content-center mt-3">
-    <div class="footer_up-contain d-flex w-75">
+    <div class="footer_up-contain d-flex w-100 px-5">
       <div class="left w-50 d-flex flex-column">
         <p class="text-white">ما را در شبکه های اجتماعی دنبال کنید</p>
         <div class="icon fs-4 d-flex gap-5">
@@ -365,12 +368,12 @@
   </div>
   <div class="footer_down w-100 d-flex justify-content-center">
     <div
-      class="footer_down-contain mt-5 d-flex w-75 justify-content-center gap-4"
+      class="footer_down-contain mt-5 d-flex w-100 px-5 justify-content-center gap-4"
     >
       <div class="shop w-50">
         <div class="shop-contain d-flex flex-column w-100 h-100">
           <span
-            class="overflow-hidden w-100 fw-bold text-white text-center fs-5"
+            class="overflow-hidden w-100 fw-bold text-white text-center title"
           >
             فروشگاه اینترنتی کاستومی
           </span>
@@ -391,7 +394,7 @@
         </div>
       </div>
       <div class="guid w-25 d-flex flex-column align-items-end gap-4">
-        <div class="d-flex flex-column align-items-center">
+        <div class="buy d-flex flex-column align-items-center">
           <span class="text-white">راهنمای خرید</span>
           <div class="line"></div>
         </div>
@@ -403,7 +406,7 @@
         </div>
       </div>
       <div class="several w-25 d-flex flex-column gap-3 align-items-end gap-4">
-        <div class="d-flex flex-column align-items-center">
+        <div class="buy d-flex flex-column align-items-center">
           <span>خدمات مشتریان</span>
           <div class="line"></div>
         </div>
@@ -415,7 +418,7 @@
         </div>
       </div>
       <div class="with w-25 d-flex flex-column align-items-end gap-4">
-        <div class="d-flex flex-column align-items-center">
+        <div class="buy d-flex flex-column align-items-center">
           <span>همراه با کاستومی</span>
           <div class="line"></div>
         </div>
