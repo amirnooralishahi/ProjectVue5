@@ -14,7 +14,7 @@ export const useDetailStore = defineStore('detailStore', () => {
         }
       })
   }
-  function getprice() {
+ async function getprice() {
     axios
       .get('https://demo.spreecommerce.org/api/v2/storefront/products')
       .then((res) => {
@@ -23,10 +23,12 @@ export const useDetailStore = defineStore('detailStore', () => {
         }
       })
   }
+  console.log(price);
+  
   return {
     price,
     title,
     getprice,
-    getname, // بازگشت تابع
+    getname, 
   }
 })

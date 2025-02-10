@@ -78,7 +78,8 @@
   </div>
   <div class="Card d-flex justify-content-center row">
     <div class="Card-contain d-flex flex-column col-9">
-      <cardItem />
+      <!-- <cardItem /> -->
+  
     </div>
     <div class="filter border rounded-3 ms-3 col-3 mt-5">
       <div
@@ -238,9 +239,7 @@
       </div>
     </div>
   </div>
-  <div
-    class="navigation w-75 mt-4 d-flex justify-content-center gap-3 align-items-center"
-  >
+  <div class="navigation w-75 mt-4 d-flex justify-content-center gap-3 align-items-center">
     <div
       class="next rounded-5 d-flex justify-content-center align-items-center"
     >
@@ -306,17 +305,17 @@
       <div
         class="circle border border-black rounded-5 d-flex justify-content-center align-items-center"
       >
-        3
+        <router-link to="/cardItem3">3</router-link>
       </div>
       <div
         class="circle border border-black rounded-5 d-flex justify-content-center align-items-center"
       >
-        2
+       <!-- <router-link to="/carItem2">2</router-link> -->
       </div>
       <div
         class="circle border border-black rounded-5 d-flex justify-content-center align-items-center"
       >
-        1
+        <router-link to="/cardItem">1</router-link>
       </div>
     </div>
     <div class="per rounded-5 d-flex justify-content-center align-items-center">
@@ -435,11 +434,11 @@
 </template>
 
 <script>
-import cardItem from "./cardItem.vue";
+// import cardItem from "./cardItem.vue";
 
 export default {
   components: {
-    cardItem,
+    // cardItem,
   },
   setup() {},
 };

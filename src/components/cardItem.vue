@@ -51,17 +51,16 @@
 </template>
 
 <script setup>
-// import { mapStores } from "pinia";
+
 import { useDetailStore } from "../stores/Detail.js";
 import { onMounted, ref } from "vue";
 
 const usebook = useDetailStore();
-console.log(usebook.price);
+
 onMounted(() => {
   usebook.getname();
   usebook.getprice();
-  console.log(usebook.price);
-  // درخواست دریافت نام محصول هنگام لود شدن
+
 });
 const arrimage = ref([
   "1.jpg",
