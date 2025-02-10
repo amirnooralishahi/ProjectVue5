@@ -17,15 +17,11 @@
       <div class="cardItems d-flex justify-content-end row">
         <div
           class="cardItem border rounded-4 col-3"
-          v-for="(item, index) in arrimage"
+          v-for="(item, index) in usebook.price"
           :key="index"
         >
           <div class="image">
-            <img
-              alt=""
-              :src="require(`@/assets/image/${item}`)"
-              class="img img-fluid"
-            />
+            <img alt="" :src="require(`@/assets/image/${arrimage[index]}`)" class="img img-fluid" />
           </div>
           <div class="sticker mt-2 d-flex justify-content-end">
             <div
@@ -60,6 +56,8 @@ const usebook = useDetailStore();
 onMounted(() => {
   usebook.getname();
   usebook.getprice();
+  console.log(usebook.price.values);
+  
 
 });
 const arrimage = ref([

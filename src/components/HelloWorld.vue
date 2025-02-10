@@ -305,17 +305,17 @@
       <div
         class="circle border border-black rounded-5 d-flex justify-content-center align-items-center"
       >
-        <router-link to="/cardItem3">3</router-link>
+       3
       </div>
       <div
         class="circle border border-black rounded-5 d-flex justify-content-center align-items-center"
       >
-       <!-- <router-link to="/carItem2">2</router-link> -->
+    2
       </div>
       <div
         class="circle border border-black rounded-5 d-flex justify-content-center align-items-center"
       >
-        <router-link to="/cardItem">1</router-link>
+       1
       </div>
     </div>
     <div class="per rounded-5 d-flex justify-content-center align-items-center">
@@ -435,12 +435,26 @@
 
 <script>
 // import cardItem from "./cardItem.vue";
-
+import { onMounted } from 'vue';
+import {useDetailStore}from '../stores/Detail'
 export default {
+  
+
   components: {
     // cardItem,
   },
-  setup() {},
+setup() {
+  const usebook = useDetailStore();
+
+onMounted(() => {
+  usebook.getname();
+  usebook.getprice();
+  
+   
+});
+
+    
+  },
 };
 </script>
 

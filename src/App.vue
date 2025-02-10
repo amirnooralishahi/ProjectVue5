@@ -1,17 +1,14 @@
 <template>
-
+<router-link to="/">1</router-link>
+<router-link to="/card-item">2cardItem</router-link>
   <router-view></router-view>
-  <HelloWorld />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+
 
 export default {
-  name: "App",
-  components: {
-    HelloWorld,
-  },
+ 
 };
 </script>
 

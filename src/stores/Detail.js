@@ -20,6 +20,8 @@ export const useDetailStore = defineStore('detailStore', () => {
       .then((res) => {
         for (var i = 0; i < 20; i++) {
           price.value.push(res.data.data[i].attributes.price)
+          console.log(price);
+          
         }
       })
   }
